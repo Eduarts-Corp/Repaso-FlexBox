@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Clases Utilitarias */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+
+
+}
+
+.btn {
+    /*Por medio de esta arreglamos los botones del fondo de C/ tarj*/
+
+    display: flex;
+    text-decoration: none;
+    color: red;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    justify-content: center;
+
+}
+
+/* Classe Main */
+
+.main {
+    /* Con este empujamos las tarjetas hacia arriba porque si
+    se hace con el container se comprime el menu .Porque???*/
+    margin-top: -2em;
+    background-color:white;
+    border-radius: 5px;
+}
+
+
+/* HEADER */
+.bg-header {
+    /*Configura todo lo relacionado a la imagen de fondo*/
+    background-image: url('/img/bg-header-min.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18.75em;
+}
+
+.bg-navbar {
+    /*Configura todo lo relacionado al fondo oscuro*/
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 1.5em 0;
+}
+
+.navbar {
+    /*Configura todo lo relacionado con el logo, nombre y anclas completo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar-brand {
+    /* Configura lo relacionado al logo y el Nombre*/
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: bisque;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+.navbar-brand img {
+    /*Configuramos con este el tamaño del control o la img*/
+    width: 2em;
+}
+
+
+
+/* Menu */
+.navbar-nav {
+    /*Aqui creamos lo que es el fondo oscuro de las anclas*/
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 1em;
+    border-radius: 0.5em
+}
+
+.navlink {
+    /*Aqui mejoramos el conjunto de las anclas (no decor, color etc)*/
+    display: inline-block;
+    padding: 0.3em;
+    text-decoration: none;
+    color: azure;
+}
+
+.navlink:hover {
+    /*Usamos la Pseudoclase Hover para efectos al pasar mouse*/
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+}
+
+/* CARDS */
+
+.main-title {
+    /*Referente al titulo inicial de las tarjetas*/
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    /*Aca config todo lo refe a las 3 tarj y su imagen para que no sobresalga*/
+    background-color: black;
+    color: azure;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 15px;
+    ;
+
+}
+
+.card-img {
+    /*Aqui arreglamos el ancho de la imagen*/
+    width: 100%;
+
+}
+
+.card-body h5 {
+    /*Aqui arreglamos el titulo de C/ tarjeta */
+    border: 1px solid green;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.card-body p {
+    font-size: 1em;
+
+}
+
+.btn-dark {
+    color: red;
+}
